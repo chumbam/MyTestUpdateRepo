@@ -1,6 +1,8 @@
 {
   "latestVersion": "1.2",
   "latestVersionCode": "2",
-  "url": "https://github.com/chumbam/MyTestUpdateRepo/releases",
-  "apk_url": "https://github.com/chumbam/MyTestUpdateRepo/blob/master/app/release/tradeMo.apk"
+  "url": "https://github.com/chumbam/MyTestUpdateRepo/raw/master/app/release/tradeMo.apk",
+  "apk_url": "https://github.com/chumbam/MyTestUpdateRepo/blob/master/app/release/tradeMo.apk",
+  "test": "https://github.com/chumbam/MyTestUpdateRepo/releases",
+  "test2": "https://github.com/chumbam/MyTestUpdateRepo/blob/master/app/release/tradeMo.apk"
 }

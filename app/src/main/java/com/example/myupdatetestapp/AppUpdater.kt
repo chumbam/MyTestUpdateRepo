@@ -14,6 +14,7 @@ class AppUpdater(val context: Context) {
             .setUpdateFrom(UpdateFrom.JSON)
             .setUpdateJSON("https://raw.githubusercontent.com/chumbam/MyTestUpdateRepo/master/app/update.json")
             .setDisplay(Display.DIALOG)
+            .setCancelable(false)
             .showAppUpdated(true)
         appUpdater.start()
     }
