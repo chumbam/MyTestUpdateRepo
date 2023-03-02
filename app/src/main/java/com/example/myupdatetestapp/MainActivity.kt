@@ -14,14 +14,13 @@ class MainActivity : AppCompatActivity() {
         val text = findViewById<TextView>(R.id.textView)
         val button = findViewById<TextView>(R.id.button)
 
-        CoroutineScope(Dispatchers.IO).launch {
-            delay(4000)
+        button.setOnClickListener {
             checkForUpdates()
         }
     }
 
     private fun checkForUpdates() {
-        AppUpdater(context = applicationContext)
+        AppUpdater(context = this)
             .checkForUpdates()
     }
 }
