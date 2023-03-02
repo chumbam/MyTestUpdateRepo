@@ -12,7 +12,7 @@ class AppUpdater(val context: Context) {
 //            .setUpdateFrom(UpdateFrom.GITHUB)
 //            .setGitHubUserAndRepo("chumbam", "MyTestUpdateRepo")
             .setUpdateFrom(UpdateFrom.JSON)
-            .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update-changelog.json")
+            .setUpdateJSON("https://raw.githubusercontent.com/chumbam/MyTestUpdateRepo/master/app/update.json")
             .setDisplay(Display.DIALOG)
             .showAppUpdated(true)
         appUpdater.start()

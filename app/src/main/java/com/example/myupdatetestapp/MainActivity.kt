@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.core.os.BuildCompat
+import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,10 +14,14 @@ class MainActivity : AppCompatActivity() {
         val text = findViewById<TextView>(R.id.textView)
         val button = findViewById<TextView>(R.id.button)
 
-
+        CoroutineScope(Dispatchers.IO).launch {
+            delay(4000)
+            checkForUpdates()
+        }
     }
 
-    fun checkForUpdates() {
-
+    private fun checkForUpdates() {
+        AppUpdater(context = applicationContext)
+            .checkForUpdates()
     }
 }
